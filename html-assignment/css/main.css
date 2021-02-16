@@ -1,0 +1,43 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+header,footer {
+    background-color: burlywood;
+}
+
+.site-title {
+    color: maroon;
+}
+
+.site-title nav li a {
+    background-color: chocolate;
+    border: 2px solid burlywood;
+}
+
+#my-image {
+    box-shadow: 0px 0px 2px 1px black;
+    height: 500px;
+}
+
+main li {
+    list-style: square;
+}
+
+main li:nth-child(2n+1) {
+    background-color: burlywood;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul a {
+    color: cornsilk;
+    text-decoration: none;
+}
+
+.site-title nav li a:hover {
+    background-color: brown;
+}
