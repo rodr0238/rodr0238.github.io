@@ -1,0 +1,220 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*** custom styles ***/
+head {
+    display: none;
+}
+meta {
+    display: none;
+}
+link {
+    display: none;
+}
+title {
+    display: none;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    background-color: #aad4cf;
+}
+
+/**** header section ****/
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 16px;
+}
+#mainimage {
+    margin: 0 auto;
+    width: 1000px;
+}
+h1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 26%;
+    font-size: 3.5rem;
+    color: white;
+    font-weight: 600;
+}
+
+/**** navigation links ****/
+
+nav ul{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    align-content: center;
+    justify-content: space-around; 
+    font-size: 100%;  
+}
+nav li{
+    text-align: center;
+    padding-top: 10px;
+    width: 380px;
+    height: 40px;
+}
+#home {
+    border-right: 2px solid black;
+}
+#contact {
+    border-left: 2px solid black;
+}
+nav li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: black;
+    padding: 16px 0 16px 0;
+    margin: 0;
+    display: inline-block;
+}
+article {
+    margin: 16px 16px 0 16px;
+    padding-bottom: 16px;
+}
+
+/**** content of the page ****/
+
+h2 {
+    font-size: 2.40rem;
+    font-weight: 600;
+    margin: 32px 0 0 0;
+}
+.image {
+    margin: 10px 20px 0 0;
+}
+.squareimage {
+    width: 280px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+p {
+    font-weight: normal;
+    line-height: 1;
+}
+div {
+    display: block;
+}
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-left: 0px;
+    margin: 32px 0 16px 0;
+}
+.fas {
+    font-size: 1rem;
+    line-height: 1.5;
+    list-style-type: disc;
+    margin: 10px 0 0 16px;
+}
+ol,ul {
+    list-style: none;
+}
+
+/**** labels and inputs ****/
+
+.contactdetails {
+    border-style: solid;
+    border-width: 2px;
+    padding: 16px 10px 10px 10px;
+}
+form {
+    display: block;
+}
+.contactdetails div {
+    padding: 10px;
+}
+label {
+    cursor: default;
+}
+#yname, #yemail, #ymessage {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+input {
+    border: 0.5px solid grey;
+    margin-top: 10px;
+}
+textarea {
+    resize: none;
+    height: 80px;
+    margin-top: 10px;
+}
+div {
+    display: block;
+}
+h4 {
+    margin: 10px 0 10px 0;
+    display: block;
+}
+button {
+    font-size: 0.75rem;
+    padding: 10px;
+    margin: 8px 0 0 10px;
+    background-color:initial;
+}
+
+/**** footer section ****/
+
+footer {
+    text-align: right;
+    font-size: 0.8rem;
+    padding: 1em 2em 2em 1em;
+}
+p {
+    font-weight: normal;
+    line-height: 1.5;
+}
