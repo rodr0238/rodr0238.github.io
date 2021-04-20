@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+    </style>
     <title>Steffy Antonette Rodrigues</title>
 </head>
 <body>
@@ -24,7 +28,7 @@
                    <li><a href="./team.html">Team</a></li>
                    <li><a href="./contact.html">Contact</a></li>
                    <li>
-                       <form action="search.html" method="get" class="search">
+                       <form action="search.html" method="get" class="search-form">
                        <label for="search"></label>
                        <input type="text" name="search" id="search" placeholder="Search">
                        <i class="fas fa-search"></i>
@@ -34,7 +38,6 @@
             </nav>
 
             <section class="banner">
-                <img src="images/main-banner.jpg" alt="banner">
                 <div class="banner-text">
                     <h1>Welcome to Three Star Media</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptatum maxime rerum sunt quasi, nobis accusamus, inventore unde ex eum iure eaque ratione recusandae, odit beatae doloremque quis animi qui.</p>
@@ -97,7 +100,7 @@
                     <div>
                          <img src="images/print.jpg" alt="print">
                          <div>
-                             <h3>print</h3>
+                             <h3>Print</h3>
                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis quam delectus dignissimos autem harum? Voluptatum hic fugiat, possimus quo quia veniam praesentium sit voluptatibus, eius repudiandae vitae earum est quaerat, incidunt temporibus. Minus sequi magnam quo recusandae eum doloribus adipisci sunt aut, molestias cumque sapiente, cum vitae quod dicta!</p>
                              <a href="#" class="btn">Print Plans <i class="fas fa-caret-right"></i></a>
                          </div>
@@ -106,7 +109,6 @@
             </section>
             <section class="our-vision">
                 <div class="content">
-                    <img src="images/vision.jpg" alt="our vision">
                     <h3>Our Vision</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ex, eos explicabo veniam eligendi incidunt dolore tempore, libero adipisci quam assumenda? Soluta distinctio minus, neque dignissimos sit in nemo. Similique doloribus odio, animi error molestiae architecto exercitationem atque, omnis, quas consequatur autem ullam sequi ipsam. Nihil voluptatem laboriosam cupiditate nam?</p>
                     <a href="#" class="btn">Learn More <i class="fas fa-caret-right"></i></a>
@@ -133,12 +135,12 @@
                     </div>
                 </div>
             </section>
-            <section class="contact-us">
 
                 <!-- ............. form for contact ................ -->
 
 
-                <div class="contact-grid">
+                <section class="contact">
+                    <div class="contact-grid contain">
                     <h2>Contact Us</h2>
                     <div class="contact-form">
                         <h3>Send us a message</h3>
@@ -183,14 +185,14 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="locaton">
+                    <div class="location">
 
                         <!-- ........... map location ............ -->
                         <h3>Location</h3>
 
 
                         <iframe 
-                        src="https://www.google.com/maps/place/Algonquin+College+%E2%80%93+Ottawa+Campus/@45.348022,-75.7591115,17z/data=!3m1!4b1!4m5!3m4!1s0x4cce0718cc4a6ad7:0xc6cc467725843e2b!8m2!3d45.348022!4d-75.7569228" width="1500" height="450" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+                        src="https://www.google.com/maps/place/Algonquin+College+%E2%80%93+Ottawa+Campus/@45.348022,-75.7591115,17z/data=!3m1!4b1!4m5!3m4!1s0x4cce0718cc4a6ad7:0xc6cc467725843e2b!8m2!3d45.348022!4d-75.7569228" width="100%" height="450" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
             </section>
@@ -202,7 +204,7 @@
 
                 <div class="content">
                     <p>&copy; Copyright Three Star Media, 2021</p>
-                    <p>All images are taken from<a href="https://unsplash.com/">Unsplash</a></p>
+                    <p>All images are taken from <a href="https://unsplash.com/">Unsplash</a></p>
                 </div>
             </footer>
         </main>
