@@ -1,0 +1,145 @@
+/* *********** adding google fonts - montserrat to the page ********** */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap');
+
+/* ********** adding styles for resposive mobile view ***********  */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+/*  *********** adding styles to the navigaton with specificity 0110 and 0011 ************ */
+
+#nav.nav {
+    width: auto;
+    margin: 0px auto;
+    padding: 30px;
+    border: none;
+    background-color: #616161;
+    text-align: center;
+}
+
+.nav a {
+    color: #FFFFFF;
+    display: block;
+}
+
+.nav a:hover {
+    color: #FFA517;
+}
+
+/*  *********** adding styles to main with specificity 0110 ************ */
+
+#main.main {
+    max-width: 1200px;
+    margin: 0px auto;
+    background-color: #FFE79C;
+}
+
+/*  *********** adding styles to home with specificity 0110, 0011 and 0101 ************ */
+
+#home.home {
+    padding: 100px;
+    background-color: #AAAAAA;
+}
+
+.home p {
+    color: black;
+}
+
+section#home {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/*  *********** adding styles to about with specificity 0110, 0100 and 0011 ************ */
+
+#about.about {
+    padding: 100px 0px;
+    background-color: #FFFFFF;
+}
+
+#about {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.about p {
+    color: black;
+}
+
+img.about-image {
+    float: left;
+    width: 100px;
+  }
+
+/*  *********** adding styles to contact with specificity 0101 ************ */
+
+#contact h2,p {
+    color: black;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#contact p {
+    font-size: 1.2rem;
+}
+
+/*  *********** adding styles to the contact form with specificity 0011 ************ */
+
+form.contact-form {
+    padding: 60px;
+    background-color: #FFA517;
+    width: auto;
+    margin: 0px auto;
+}
+
+/*  *********** adding styles to the footer with specificity 0001 ************ */
+
+footer {
+    background-color: #AAAAAA;
+    padding: 15px;
+}
+
+
+
+/* ********************************* adding styles for resposive desktop view **************************************  */
+
+
+
+/*  *********** adding styles to the navigation with specificity 0011 and 0101 ************ */
+
+@media screen and (min-width: 760px) {
+    .nav a {
+        display: inline;
+        padding: 0px 60px;
+    }
+
+    #nav a:hover {
+        color: #FFA517;
+    }
+
+/*  *********** adding styles to about with specificity 0101 and 0011 ************ */
+
+    #about h2 {
+        text-align: center;
+        padding-left: 250px;
+    }
+
+    img.about-image {
+        float: left;
+        width: 250px;
+    }
+
+/*  *********** adding styles to contact with specificity 0011 ************ */
+
+    .contact p {
+        padding: 30px;
+        font-size: 16px;
+    }
+}
