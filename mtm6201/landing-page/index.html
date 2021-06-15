@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Landing Page</title>
+</head>
+<body>
+
+    <!-- header that includes logo of the page -->
+
+    <header class=".page">
+        <img src="./images/logo/logo.png" alt="logo">
+    </header>
+
+    <main>
+     
+    <!-- grid section of the landing page that contains text on the left -->
+
+    <section class="landing container">
+        <div class="content-left">
+            <h1>Want to be your own boss?</h1>
+            <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
+        </div>
+        <div>
+            <img src="./images/bg-image/scooter.svg" alt="scooter image">
+        </div>
+
+    <!-- Apply Now Contact Form with text, checkbox and button -->
+
+    <div class="form">
+        <h2>Apply Now</h2>
+        <p>Enter your info below<span class="dot">.</span><span class="start">to get started.</span></p>
+        
+         <form action="apply">
+             <div>
+                 <label for="fname"></label>
+                 <input type="text" name="fname" id="fname" placeholder="First name">
+             </div>
+             <div>
+                 <label for="lname"></label>
+                 <input type="text" name="lname" id="lname" placeholder="Last name">
+             </div>
+             <div>
+                 <label for="email"></label>
+                 <input type="text" name="email" id="email" placeholder="Email address">
+             </div>
+             <div>
+                 <label for="phonenum"></label>
+                 <input type="text" name="phonenum" id="phonenum" placeholder="Phone number">
+             </div>
+             <div class="check">
+                 <input type="checkbox" name="checkbox" id="checkbox">
+                 <span>I agree to dash terms</span>
+             </div>
+             <button type="submit">DRIVE WITH US</button>
+             <p>Already applied? <a href="#">Check your application status here</a></p>
+         </form>
+    </div>
+    </section>
+    </main>
+
+    <!-- footer section of the page that includes text, labels, button and icons -->
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <h3>See how much you can earn with Dash.</h3>
+            <p>how many hours do you want to drive with us this week?</p>
+
+            <form action="hrs">
+
+    <!-- using div for better flex styling -->
+
+            <div class="footer-form">
+                <div>
+                    <label for="hours"></label>
+                    <input type="number" name="hours" id="hours" placeholder="Hours">
+                </div>
+                <div>
+                    <label for="city"></label>
+                    <input type="text" name="city" id="city" placeholder="City">
+                </div>
+                <div>
+                    <button type="submit">CALCULATE</button>
+                </div>
+                </div>
+            </form>
+        </div>
+        <div class="icons">
+            <a href="www.facebook.com" target="_blank"><img src="./images/icons/facebook.svg" alt="facebook" class="facebook"></a>
+            <a href="www.instagram.com" target="_blank"><img src="./images/icons/instagram.svg" alt="instagram" class="instagram"></a>
+            <a href="www.twitter.com" target="_blank"><img src="./images/icons/twitter.svg" alt="twitter" class="twitter"></a>
+            <a href="www.linkedin.com" target="_blank"><img src="./images/icons/linkedin.svg" alt="linkedin" class="linkedin"></a>
+        </div>
+    </footer>
+</body>
+</html>
