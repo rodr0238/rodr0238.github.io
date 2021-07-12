@@ -73,6 +73,26 @@ ul li:nth-child(1) {
     color: chocolate;
 }
 
+ul li:nth-child(2) {
+    color: rgb(253, 237, 170);
+}
+
+ul li:nth-child(3) {
+    color: rgba(227, 11, 92); 
+}
+
+ul li:nth-child(4) {
+    color: burlywood;
+}
+
+ul li:nth-child(5) {
+    color: mediumaquamarine;
+}
+
+ul li:nth-child(6) {
+    color: rgb(255, 209, 5);
+}
+
 ul {
     display: flex;
     justify-content: space-between;
