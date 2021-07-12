@@ -47,10 +47,128 @@ table {
 	border-spacing: 0;
 }
 
+
 html {
     font-family: 'Dosis', sans-serif;
     font-size: 16px;
 }
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+ul li:nth-child(1) {
+    color: chocolate;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1080px) {
+
+    .container {
+        margin: 0 4rem;
+    }
+
+    /* Applying flex to the navigation */
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Applying flex to each navigation item */
+
+    nav div {
+        display: flex;
+    }
+    nav .logo {
+        order: 1;
+    }
+
+    nav .nav1 {
+        margin-right: auto;
+    }
+
+    nav .nav2 {
+        order: 2;
+        margin-left: auto; 
+    }
+
+    nav a {
+        margin: 1rem;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border: 1px solid #000;
+        padding: 2rem;
+    }
+
+    .content p {
+        align-self: center;
+        margin-right: 2rem;
+        line-height: 2;
+    }
+
+    /* About */
+
+    .story {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "past past-img"
+        "past-p past-img"
+        "past-p past-img";
+        margin-top: 4rem;
+    }
+
+    .story h3 {
+        grid-area: past;
+    }
+
+    .story p {
+        grid-area: past-p;
+        margin-top: -3rem;
+    }
+
+    .story div {
+        grid-area: past-img;
+    }
+    
+
+    /* Contact */
+
+
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-info {
+        margin-top: 2rem;
+    }
+
+}
+
+/* 
 
 .logo img {
     display: block;
@@ -96,6 +214,5 @@ html {
     float: right;
 }
 
-h1 {
-    font-size: 2rem;
-}
+ */
+
