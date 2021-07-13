@@ -48,7 +48,7 @@ table {
 }
 
 
-/******* custom styles *******/
+/******* CUSTOM STYLES *******/
 
 /* Home Page */
 
@@ -63,6 +63,7 @@ nav {
     margin-bottom: 1rem;
 }
 
+/* applying display block property to the nav */
 nav a {
     display: block;
     text-decoration: none;
@@ -80,6 +81,8 @@ p {
 img {
     margin-bottom: 1rem;
 }
+
+/* positioning the button on the left bottom side of the grid below the content paragraph */
 .know-more {
     border-radius: 8px;
     border: 1px solid #88c0c4;
@@ -92,12 +95,13 @@ img {
     transition: 300ms;
 }
 
+/* added a color transition to the button when cursor is hovered */
 .know-more:hover {
     background-color: #88c0c4;
     color: #ffffff;
 }
 
-/* added non-stop animation to the button */
+/* added an infinite animation to the button */
 @keyframes scale {  
     0%, 50%, 100% {
       transform: scale(1);
@@ -160,6 +164,7 @@ ul {
     margin: 1rem;
 }
 
+/* aligning the footer content to the right */
 footer {
     text-align: right;
     background-color: #88c0c4;
@@ -196,6 +201,7 @@ footer p {
     line-height: 1.75rem;
 }
 
+/* aligning the headings to the center */
 .h3 {
     font-family: 'Dosis', sans-serif;
     font-size: 1.5rem;
@@ -229,6 +235,7 @@ form {
     padding: 1.5rem 1.5rem 1rem;
 }
 
+/* adding styles to the input fields */
 form input, textarea {
     background-color: #fdfbfb;
     border-radius: 4px;
@@ -251,6 +258,7 @@ h4 {
     text-align: center;
 }
 
+/* adding styles to the submit button */
 .submit {
     border-radius: 8px;
     border: 1px solid black;
@@ -283,13 +291,14 @@ h4 {
 
 @media screen and (min-width: 760px){
 
+    /* aligning paragraph to the left */
     .content p {
         text-align: left;
         margin-top: -0.5rem;
         line-height: 1.5rem;
     }
 
-    /* added non-stop animation to the button */
+    /* added an infinite animation to the button */
     @keyframes scale {  
         0%, 50%, 100% {
           transform: scale(1);
@@ -341,7 +350,7 @@ h4 {
         line-height: 1.5rem;
     }
 
-    /* used display grid layout to specify the columns and rows */
+    /* used display grid layout with 2 columns and 3 rows */
     .story {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -352,11 +361,13 @@ h4 {
         margin-top: 4rem;
     }
 
+    /* assigning position to heading as per the grid */
     .story h3 {
         grid-area: past;
         color: black;
     }
 
+    /* assigning position to paragraph as per the grid */
     .story p {
         grid-area: past-p;
         margin-top: -3rem;
@@ -379,11 +390,13 @@ h4 {
         margin-top: 4rem;
     }
 
+    /* assigning position to heading as per the grid */
     .purpose h3 {
         grid-area: past;
         color: black;
     }
 
+    /* assigning position to paragraph as per the grid */
     .purpose p {
         grid-area: past-p;
         margin-top: -1rem;
@@ -427,6 +440,8 @@ h4 {
     nav div {
         display: flex;
     }
+
+    /* used order property to the nav and logo to specify its positions. */
     nav .logo {
         order: 1;
     }
@@ -462,7 +477,7 @@ h4 {
         padding: 1rem;
     }
 
-    /* added non-stop animation to the button */
+    /* added an infinite animation to the button */
     @keyframes scale {  
         0%, 50%, 100% {
           transform: scale(1);
@@ -483,7 +498,7 @@ h4 {
         animation-timing-function: linear;
       }
 
-    /* applying flex property to evenlt distribute items in the line */
+    /* applying flex property to evenly distribute items in the same line */
       ul {
         display: flex;
         justify-content: space-between;
@@ -493,7 +508,7 @@ h4 {
 
     /* About Page */
 
-    /* used display grid layout to specify the columns and rows */
+    /* used display grid layout to specify 2 columns and 3 rows */
     .story {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -504,10 +519,12 @@ h4 {
         margin-top: 4rem;
     }
 
+    /* assigning position to heading as per the grid */
     .story h3 {
         grid-area: past;
     }
 
+    /* assigning position to paragraph in our past as per the grid */
     .story p {
         grid-area: past-p;
         margin-top: -3rem;
@@ -518,6 +535,7 @@ h4 {
         grid-area: past-img;
     }
 
+    /* assigning position to paragraph in purpose of ice creamery as per the grid */
     .purpose p {
         line-height: 1.5rem;
     }
