@@ -48,27 +48,86 @@ table {
 }
 
 
+/******* custom styles *******/
+
+/* Home Page */
+
 html {
     font-family: 'Dosis', sans-serif;
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 nav {
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 nav a {
     display: block;
     text-decoration: none;
     color: inherit;
-
+    line-height: inherit;
 }
+
+p {
+    font-size: 1rem;
+    margin: 1rem;
+    text-align: left;
+    line-height: 1.75rem;
+}
+
+img {
+    margin-bottom: 1rem;
+}
+.know-more {
+    border-radius: 8px;
+    border: 1px solid #88c0c4;
+    text-decoration: none;
+    color: #88c0c4;
+    padding: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+    grid-column: 1/2;
+    transition: 300ms;
+}
+
+.know-more:hover {
+    background-color: #88c0c4;
+    color: #ffffff;
+}
+
+/* added non-stop animation to the button */
+@keyframes scale {  
+    0%, 50%, 100% {
+      transform: scale(1);
+    }
+     25% {
+       transform: scale(1.1, 1.1);
+     }
+     75% {
+       transform: scale(1.2, 1.2);
+     }
+     
+  }
+  
+  .know-more {
+    animation-name: scale;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
 
 h1 {
+    font-family: 'Dosis', sans-serif;
     font-size: 2rem;
+    font-weight: 600;
     text-align: center;
+    color: #88c0c4;
+    margin: 1rem;
 }
 
+/* using :nth-child function for assigning colors to the flavours */
 ul li:nth-child(1) {
     color: chocolate;
 }
@@ -93,13 +152,261 @@ ul li:nth-child(6) {
     color: rgb(255, 209, 5);
 }
 
+/* using flexbox property to design the layout for lists  */
 ul {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 1rem;
 }
 
+footer {
+    text-align: right;
+    background-color: #88c0c4;
+    color: inherit;
+    margin: 0.5rem;
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+
+/* About Page */
+
+.about {
+    font-family: 'Dosis', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: #88c0c4;
+    margin: 1rem;
+}
+
+.about-content {
+    margin: 0 2rem 2rem;
+    line-height: 1.75rem;
+    text-align: center;
+}
+
+.story p {
+    line-height: 1.75rem;
+}
+
+.purpose p {
+    line-height: 1.75rem;
+}
+
+.h3 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #88c0c4;
+    text-align: center;
+    margin: 1rem;
+}
+
+.mission p {
+    text-align: center;
+}
+
+.vision p {
+    text-align: center;
+}
+
+/* Contact Page */
+
+.contact-us {
+    margin: 1.5rem;
+    font-size: 2rem;
+    color: black;
+}
+
+/* adding border to contact form */
+form {
+    margin: 1rem;
+    border: 1px solid #88c0c4;
+    border-radius: 6px;
+    padding: 1.5rem 1.5rem 1rem;
+}
+
+form input, textarea {
+    background-color: #fdfbfb;
+    border-radius: 4px;
+    border: solid 1px #88c0c4;
+    padding: 0.5rem;
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    resize: none;
+}
+
+form div {
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    color: black;
+    margin: 2rem;
+    text-align: center;
+}
+
+.submit {
+    border-radius: 8px;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+    transition: 300ms;
+}
+
+/* adding backgrounf color to the button when cursor is hovered */
+.submit:hover {
+    background-color: #88c0c4;
+    color: #ffffff;
+}
+
+.address, .email, .number {
+    background-color: #fdfbfb;
+    padding: 0.3rem;
+    margin: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    border: solid 1px #88c0c4;
+}
+
+/************* TABLET STYLES ***************/
+
+/* Home Page */
+
+@media screen and (min-width: 760px){
+
+    .content p {
+        text-align: left;
+        margin-top: -0.5rem;
+        line-height: 1.5rem;
+    }
+
+    /* added non-stop animation to the button */
+    @keyframes scale {  
+        0%, 50%, 100% {
+          transform: scale(1);
+        }
+         25% {
+           transform: scale(1.1, 1.1);
+         }
+         75% {
+           transform: scale(1.2, 1.2);
+         }
+         
+      }
+      
+      .know-more {
+        animation-name: scale;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+
+    h1 {
+        font-size: 3rem;
+        margin: 1.5rem;
+    }
+
+    /* used display block property for the list to take up the whole width on the line */
+    ul {
+        display: block;
+        text-decoration: none;
+        line-height: 2rem;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+    }
+
+    /* aligning the footer content to the right */
+    footer p {
+        text-align: right;
+        padding: 0.2rem;
+        background-color: #88c0c4;
+        color: inherit;
+        font-size: 1rem;
+        margin: 1rem;
+    }
+
+    /* About Page */
+
+    .about-content {
+        line-height: 1.5rem;
+    }
+
+    /* used display grid layout to specify the columns and rows */
+    .story {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "past past-img"
+        "past-p past-img"
+        "past-p past-img";
+        margin-top: 4rem;
+    }
+
+    .story h3 {
+        grid-area: past;
+        color: black;
+    }
+
+    .story p {
+        grid-area: past-p;
+        margin-top: -3rem;
+        margin-bottom: -5rem;
+        line-height: 1.5rem;
+    }
+
+    .story div {
+        grid-area: past-img;
+    }
+
+    /* used display grid layout to specify the columns and rows */
+    .purpose {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "past-img past"
+        "past-img past-p"
+        "past-img past-p";
+        margin-top: 4rem;
+    }
+
+    .purpose h3 {
+        grid-area: past;
+        color: black;
+    }
+
+    .purpose p {
+        grid-area: past-p;
+        margin-top: -1rem;
+        text-align: right;
+        line-height: 1.5rem;
+    }
+
+    .purpose div {
+        grid-area: past-img;
+    }
+
+    h4 {
+        font-size: 1.3rem;
+    }
+}
+
+
+/************** DESKTOP STYLES **************/
+
+
 @media screen and (min-width: 1080px) {
+
+/* Home Page */
 
     .container {
         margin: 0 4rem;
@@ -111,6 +418,8 @@ ul {
         display: flex;
         justify-content: center;
         align-items: center;
+        color: #88c0c4;
+        font-size: 1rem;
     }
 
     /* Applying flex to each navigation item */
@@ -135,6 +444,7 @@ ul {
         margin: 1rem;
     }
 
+    /* using grid to specify the size and number of columns */
     .content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -145,11 +455,45 @@ ul {
     .content p {
         align-self: center;
         margin-right: 2rem;
-        line-height: 2;
+        line-height: 1.5rem;
     }
 
-    /* About */
+    .know-more {
+        padding: 1rem;
+    }
 
+    /* added non-stop animation to the button */
+    @keyframes scale {  
+        0%, 50%, 100% {
+          transform: scale(1);
+        }
+         25% {
+           transform: scale(1.1, 1.1);
+         }
+         75% {
+           transform: scale(1.2, 1.2);
+         }
+         
+      }
+      
+      .know-more {
+        animation-name: scale;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+
+    /* applying flex property to evenlt distribute items in the line */
+      ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 1rem;
+    }
+
+    /* About Page */
+
+    /* used display grid layout to specify the columns and rows */
     .story {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -167,16 +511,21 @@ ul {
     .story p {
         grid-area: past-p;
         margin-top: -3rem;
+        line-height: 1.5rem;
     }
 
     .story div {
         grid-area: past-img;
     }
+
+    .purpose p {
+        line-height: 1.5rem;
+    }
     
 
     /* Contact */
 
-
+    /* using grid to specify the size and number of columns */
     .contact {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -186,53 +535,20 @@ ul {
         margin-top: 2rem;
     }
 
+    /* applying animation that changes color to the contact form */
+    .contact {
+        width: 100%;
+        height: 100%;
+        animation: pulse 5s infinite;
+      }
+      
+      @keyframes pulse {
+        0% {
+          background-color: #88c0c4;
+        }
+        100% {
+          background-color: #f8aba8;
+        }
+      }
 }
-
-/* 
-
-.logo img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.nav1 {
-    display: inline-block;
-    position: relative;
-    float: left;
-}
-
-.nav2 {
-    display: inline-block;
-    position: relative;
-    float: right;
-}
-
-.nav1 a {
-    padding: 10px;
-}
-
-.nav2 a {
-    padding: 10px;
-}
-
-
-
-.content {
-    padding-top: 30px;
-    border: 1px solid black;
-    
-}
-
-.content p {
-    margin-top: 30px;
-    margin-right: 50%;
-    padding: 0px 200px 0px 0px;
-}
-
-.image {
-    float: right;
-}
-
- */
 
