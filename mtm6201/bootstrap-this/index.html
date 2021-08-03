@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Bootstrap This</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigation -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            CONTENT
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#typos">Typography</a></li>
+                            <li><a class="dropdown-item" href="#images">Images</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            UTILITIES
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#backgrounds">Backgrounds</a></li>
+                            <li><a class="dropdown-item" href="#display">Display</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            LAYOUT
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#containers">CONTAINERS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            COMPONENTS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#navigationbar">Navigation Bar</a></li>
+                            <li><a class="dropdown-item" href="#cards">Cards</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+    <!-- About Bootstrap -->
+    <div class="container">
+        <div class="row mt-5">
+            <h1 class="display-3 tx-bold"><strong>ABOUT BOOTSTRAP</strong></h1>
+            <p class="mt-2">
+                Bootstrap is an open source front end development framework to create websites and apps. The Bootstrap
+                framework is built on HTML, CSS, and JavaScript. Bootstrap facilitates the development of responsive,
+                mobile-first sites and apps. Bootstrap includes user interface components, layouts and JavaScript tools
+                along with the framework for implementation.
+            </p>
+        </div>
+
+        <!-- Content Section -->
+        <div class="row mt-5">
+            <h2 class="display-4">CONTENT</h2>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-lg-3 col-sm-12 mb-sm-4">
+                <h3 id="typos">TYPOGRAPHY</h3>
+            </div>
+
+
+            <h3>Headings</h3>
+            <p>Bootstrap also has 6 headings just like HTML, from<span class="text-success"> h1</span> to<span
+                    class="text-success"> h6</span>.</p>
+            <div class="col-lg-9 col-sm-12">
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
+            </div>
+            <h3>Display headings</h3>
+            <p>Display Headings are designed as an opinionated heading style and it is used when we need our headings to
+                stand out.</p>
+            <div class="col-lg-9 col-sm-12">
+                <h1 class="display-1">Display 1</h1>
+                <h1 class="display-2">Display 2</h1>
+                <h1 class="display-3">Display 3</h1>
+                <h1 class="display-4">Display 4</h1>
+                <h1 class="display-5">Display 5</h1>
+                <h1 class="display-6">Display 6</h1>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-lg-3 col-sm-12 mb-sm-4">
+                <h3 id="images">IMAGES</h3>
+            </div>
+            <div class="col-lg-9 col-sm-12">
+                <p>The class that is used for making responsive images on bootstrap is img-fluid.</p>
+                <img src="https://via.placeholder.com/1000x200" alt="placeholder" class="img-fluid">
+                <p>This image fits inside the container, as we have used the img-fluid class.</p>
+            </div>
+        </div>
+
+        <!-- Utilities Section -->
+        <div class="row mt-5">
+            <h2 class="display-4">UTILITIES</h2>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-lg-3 col-sm-12 mb-sm-4">
+                <h3 id="backgrounds">BACKGROUNDS</h3>
+            </div>
+            <div class="col-lg-9 col-sm-12 lh-lg">
+                <p>There are different classes for various background colors.</p>
+                <p>COLORS: <span class="bg-primary p-1">bg-primary</span>, <span
+                        class="bg-secondary p-1">bg-secondary</span>, <span class="bg-success p-1">bg-success</span>,
+                    <span class="bg-danger p-1">.bg-danger</span>, <span class="bg-warning p-1">.bg-warning</span>,
+                    <span class="bg-info p-1">bg-info</span>, <span class="bg-light p-1">bg-light</span>, <span
+                        class="bg-dark p-1 text-white">bg-dark</span>, etc.</p>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-lg-3 col-sm-12 mb-sm-4">
+                <h3 id="display">DISPLAY</h3>
+            </div>
+            <div class="col-lg-9 col-sm-12">
+                <p>.d-{value} classes are used to apply the display property to elements.</p>
+                <p>.d-{value} is used for xs breakpoint while .d-{breakpoint}-{value} is used for other breakpoints such
+                    as sm, md, lg, and xl.</p>
+                <p>The values can be any one of the these - none, inline, inline-block, block, table, table-cell,
+                    table-row, flex and inline-flex.</p>
+                <p>Screen widths can be effected by the media queries with the given breakpoint or larger.</p>
+                <h5 class="mb-3">Examples</h5>
+                <div class="d-inline bg-dark text-white p-3 mt-1">display: inline;</div>
+                <div class="d-inline bg-secondary text-white p-3 my-5">display: inline;</div>
+                <div class="d-block bg-secondary text-white p-3 mt-4">display: block;</div>
+                <div class="d-block bg-dark text-white p-3">display: block;</div>
+                <div class="d-flex bg-dark text-white p-3 mt-4">
+                    <div class="p-1 bg-secondary mx-4">display: flex;</div>
+                    <div class="p-1 bg-secondary mx-4">display: flex;</div>
+                    <div class="p-1 bg-secondary mx-4">display: flex;</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Layout Section -->
+        <div class="row mt-5">
+            <h2 class="display-4">LAYOUT</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-sm-12 mb-sm-4">
+                <h3 id="containers">Containers</h3>
+            </div>
+            <div class="col-lg-9 col-sm-12">
+                <p>Containers are required when using the default grid system. Containers are used to contain, pad and
+                    sometimes center the content inside it. There are 3 different containers in Bootstrap.<br>
+                    [.container]: This container sets a max-width according to the
+                    breakpoint.<br>
+                    [.container-fluid]: This container takes 100% width at all breakpoints.<br>
+                    [.container-sm, .container-md, .container-lg, .container-xl, .container-xxl]: This container allow
+                    to specify a class that is 100% of width untill the specified breakpoint is reached.</p>
+            </div>
+        </div>
+
+        <!-- Components Sections -->
+        <div class="row mt-5">
+            <h2 class="display-4">COMPONENTS</h2>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-3 col-sm-12 mb-sm-4">
+                <h4 id="navigationbar">Navigation Bar</h4>
+            </div>
+            <div class="col-lg-9 col-sm-12">
+                <p>Nav tags are applied to a class of .navbar for default navbar and .navbar-expand +
+                    {-sm/-md/-lg/-xl/-xxl} for responsive collapsing and color scheme classes. <br>
+                    Spacing and Flex utility clsses can be used to controll spacing and alignment within the navbars.
+                    <br>
+                    Navbars are responsive by default.</p>
+            </div>
+            <div class="col-sm-12 col-lg-9 offset-lg-3">
+                <div class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="#" class="nav-link active">HOME</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">CONTENT</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">UTILITIES</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">LAYOUT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-5">
+            <div class="col-lg-3 col-sm-12 mb-sm-4">
+                <h4 id="cards">CARDS</h4>
+            </div>
+            <div class="col-lg-9 col-sm-12">
+                <p>Card is a flexible and extensible container of content. It includes header, footer, background
+                    colors, and many display options.</p>
+                <p>We can nest cards in rows and use the grid system to control multiple cards. In addition, we can
+                    style the cards as we like using Bootstrap utilities as well as Custom CSS.</p>
+                <p>We can even add navigation inside cards using Bootstrap's nav components.</p>
+                <p>Multiple cards can be grouped together with the help of Card layouts.</p>
+                <p>It is also easy to change up the color schemes and text alignment and we can even play around with
+                    the images.</p>
+                <div class="card-example d-flex">
+                    <div class="card w-50 me-4">
+                        <img src="https://via.placeholder.com/150x100" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima vero
+                                accusantium autem, harum est consequuntur voluptates.</p>
+                            <a href="#" class="btn btn-secondary">CLICK HERE</a>
+                        </div>
+                    </div>
+                    <div class="card w-50">
+                        <img src="https://via.placeholder.com/150x100" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima vero
+                                accusantium autem, harum est consequuntur voluptates.</p>
+                            <a href="#" class="btn btn-secondary">CLICK HERE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
